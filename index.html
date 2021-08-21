@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Statistic | Gulshanoy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Covid Statistic by Country</h1>
+    </header>
+    <form id="form">
+      <input type="text" id="input-text" autocomplete="off" placeholder="Search..." />
+      <button id="search-button">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+    <div class="info-container">
+      <ul class="infos">
+        <li class="info">
+          <!-- CountryName -->
+          <div class="countryName">
+            <h2 class="title">Country Name</h2>
+            <span class="flag" id="flag">
+              <img
+                class="flag-img"
+                src="https://www.countryflags.io/BE/shiny/64.png"
+              />
+            </span>
+            <h3 id="countryName"></h3>
+          </div>
+          <!-- Confirmed -->
+          <div class="confirmed">
+            <h2 class="title">Confirmed</h2>
+            <span class="icon">
+              <i class="fas fa-viruses"></i>
+            </span>
+            <h3 id="confirmed-all"></h3>
+          </div>
+          <!-- Deaths -->
+          <div class="deaths">
+            <h2 class="title">Deaths</h2>
+            <span class="icon">
+              <i class="fas fa-skull-crossbones"></i>
+            </span>
+            <h3 id="deathsAll"></h3>
+          </div>
+          <!-- Recovered -->
+          <div class="recovered">
+            <h2 class="title">Recovered</h2>
+            <span class="icon">
+              <i class="fas fa-running"></i>
+            </span>
+            <h3 id="recoveredAll"></h3>
+          </div>
+          <div class="active">
+            <h2 class="title">Active</h2>
+            <span class="icon">
+              <i class="fas fa-hospital-user"></i>
+            </span>
+            <h3 id="activeAll"></h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+
+
+
+  </body>
+</html>
